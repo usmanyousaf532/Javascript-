@@ -233,6 +233,28 @@ var itemList = document.querySelector('#items');
 //     document.body.style.backgroundColor="rgb("+e.offsetX+","+e.offsetY+", 40)";
 // }
 
+var itemInput = document.querySelector('input[type="text"]');
+var form = document.querySelector('form');
+// itemInput.addEventListener('keydown',runEvent);
+// itemInput.addEventListener('focus',runEvent);
+// itemInput.addEventListener('blur',runEvent);
+// itemInput.addEventListener('cut',runEvent);
+// itemInput.addEventListener('paste',runEvent);
+
+// var select=document.querySelector('select');
+// select.addEventListener('change', runEvent);
+// select.addEventListener('input', runEvent);
+
+form.addEventListener('submit',runEvent);
+
+function runEvent(e){
+    e.preventDefault();
+    console.log('Event Type ' +e.type);
+    // console.log(e.target.value);
+    // document.getElementById('output').innerHTML='<h3>'+e.target.value+'</h3>';
+    
+}
+
 
 
 
