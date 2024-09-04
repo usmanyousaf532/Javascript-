@@ -91,8 +91,43 @@ const age =[12 ,54 ,5 ,44,77,8,18,20,2.5,9,19,112,57,6,97]
 
 // square root of age using map by es6 arrow function
 
-const ageSquare= age.map(Age=>Math.sqrt(Age));
-console.log(ageSquare);
+// const ageSquare= age.map(Age=>Math.sqrt(Age));
+// console.log(ageSquare);
+
+//multipluy by 2 of age using map by es6 arrow function
+// const ageByTwo= age.map(Age=>Age*2);
+// console.log(ageByTwo);
 
 
+// square root && multiply by 2 of age using map by es6 arrow function
 
+// const ageMap= age
+// .map(Age=>Math.sqrt(Age))
+// .map(Age=>Age*2);
+// console.log(ageMap);
+
+// sort
+
+// sort using es5 method
+
+// const SortCompany = companies.sort (function(c1,c2){
+//     if(c1.start>c2.start){
+//         return 1;
+//     }else{
+//         return -1;
+//     }
+
+// });
+// console.log(SortCompany);
+
+// sort using by es6 arrow method 
+
+// sort company by start date 
+// const SortCompany=companies.sort((c1,c2)=>(c1.start>c2.start ? 1 : -1))
+// console.log(SortCompany);
+
+
+// sort age 
+
+// const SortAge=age.sort((a,b)=>a-b);
+// console.log(SortAge);
