@@ -169,11 +169,11 @@ const age =[12 ,54 ,5 ,44,77,8,18,20,2,9,19,112,57,6,97]
 
 // using sort map filter reduce all together
 
-const combined= age
-.map(Age=>Age*2)
-.filter(Age=>Age>=50)
-.sort((a,b)=>a-b)
-.reduce((a,b)=>a+b,0);
-console.log(combined);
+// const combined= age
+// .map(Age=>Age*2)
+// .filter(Age=>Age>=50)
+// .sort((a,b)=>a-b)
+// .reduce((a,b)=>a+b,0);
+// console.log(combined);
 
 
