@@ -26,4 +26,4 @@ class magazine extends book{
 
 const mg1=new magazine('mag1', 'Dom','2022','November');
 console.log(mg1);
-console.log(mg1.getSummary())
+// console.log(mg1.getSummary())
