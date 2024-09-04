@@ -3,13 +3,13 @@ const companies =[
     { name: "company two", category:"technology" ,start:1983 , end:2004 },
     { name: "company three", category:"auto" ,start:1986 , end:2013 },
     { name: "company four", category:"retail" ,start:1981 , end:1989 },
-    { name: "company five" ,category:"finance" ,start:1989 , end:2003 },
+    { name: "company five" ,category:"finance" ,start:1999 , end:2003 },
     { name: "company six", category:"retail" ,start:1999 , end:2007 },
     { name: "company seven", category:"technology" ,start:1981 , end:2000 },
     { name: "company eight", category:"retail" ,start:2000 , end:2003 },
     { name: "company nine", category:"technology" ,start:1981 , end:2012 },
 ]
-const age =[12 ,54 ,5 ,44,77,8,18,20,2.5,9,19,112,57,6,97]
+const age =[12 ,54 ,5 ,44,77,8,18,20,2,9,19,112,57,6,97]
 
 // for loop
 // for (let i=0;i<companies.length;i++)
@@ -131,3 +131,49 @@ const age =[12 ,54 ,5 ,44,77,8,18,20,2.5,9,19,112,57,6,97]
 
 // const SortAge=age.sort((a,b)=>a-b);
 // console.log(SortAge);
+
+// reduce
+
+// age sum by using for loop 
+
+// let totalAge =0;
+// for (let i=0;i<age.length;i++){
+//     totalAge +=age[i];
+// }
+// console.log(totalAge);
+
+// age sum using reduce using es5 
+
+// const totalAge=age.reduce(function(total , Age){
+//     return total + Age;
+// },0);
+// console.log(totalAge);
+
+// age sum using reduce using es6 arrow function
+
+// const totalAge = age.reduce((total , Age)=> total+Age,0);
+// console.log(totalAge);
+
+// get total years for all companies by reduce 
+//using es5 method
+
+// const totalYears = companies.reduce(function(total,company){
+//     return total+(company.end-company.start);
+// },0);
+// console.log(totalYears);
+// get total years for all companies by reduce
+//using es6 arrow  method
+
+// const totalYears= companies.reduce((total ,company)=>total+(company.end-company.start),0);
+// console.log(totalYears);
+
+// using sort map filter reduce all together
+
+const combined= age
+.map(Age=>Age*2)
+.filter(Age=>Age>=50)
+.sort((a,b)=>a-b)
+.reduce((a,b)=>a+b,0);
+console.log(combined);
+
+
